@@ -1,0 +1,151 @@
+/* Seu CSS atual */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px auto;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.5s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+#social-links {
+  justify-content: center;
+  gap: 32px;
+  padding: 24px 0;
+  align-items: center;
+  font-size: 32px;
+}
+
+a:hover ion-icon {
+  color: blue;
+  transform: scale(1.1);
+}
+
+/* Switch CSS */
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.switch-label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 2px; /* Ajustado para ficar centralizado */
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #333;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+
+.switch.checked::before {
+  left: calc(100% - 18px);
+  transform: translateY(-50%);
+}
+
+/* Estilo quando o switch está ligado */
+.switch.checked {
+  background-color: #4CAF50; /* Altere para a cor desejada quando o switch estiver ligado */
+}
+
+.switch.checked::after {
+  left: calc(100% - 6px);
+  background-color: white; /* Altere para a cor desejada para a bolinha quando o switch estiver ligado */
+}
+
+/* Adicionado hover para mudar a cor do pontinho */
+.switch:hover::after {
+  background-color: #666;
+}
+
+
+

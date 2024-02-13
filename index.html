@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Título</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/avatar.png">
+
+      <p style="text-align: center;">
+        @maykbrito
+      </p>
+
+      <div class="switch-container">
+        <span class="switch-label">Switch</span>
+        <div class="switch"></div>
+      </div>
+
+      <ul>
+        <li><a href="#">Inscrever-se no NLW</a></li>
+        <li><a href="#">Baixar meu ebook</a></li>
+        <li><a href="#">Ver meu portfólio</a></li>
+        <li><a href="http://rocketseat.com.br">Rocketseat</a></li>
+      </ul>
+      
+      <div id="social-links" class="flex-container">
+          <a href="https://www.instagram.com/maykbrito"><ion-icon style="color: white;" name="logo-instagram"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/maykbrito"><ion-icon style="color: white;" name="logo-linkedin"></ion-icon></a>
+          <a href="https://www.youtube.com/channel/UC8-Th83bH_thdKZDJCrn88g"><ion-icon style="color: white;" name="logo-youtube"></ion-icon></a>
+          <a href="https://github.com/maykbrito"><ion-icon style="color: white;" name="logo-github"></ion-icon></a>
+      </div>
+      <p style="color: white; text-align: center; font-size: 12px; margin-top: 5px;">Feito com carinho, ❤️, pela <a href="https://rocketseat.com.br/" style="color: white;">Rocketseat</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const switchElement = document.querySelector('.switch');
+      switchElement.addEventListener('click', function () {
+        this.classList.toggle('checked');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
